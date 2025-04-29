@@ -1,9 +1,14 @@
-suma = 0
+def mmostarnum(inicio=0,fin=0):
+    if(inicio < fin):
+        for i in range(inicio, fin+1):
+            print(i, end=" ")
+    else:
+        for i in range(fin, inicio+1):
+            print(i, end=" ")
 
-while True:
-    numero = float(input("Ingresa un número: "))
-    suma += numero
-    if suma > 100:
-        break
+def main():
+    incio= int(input('Ingrese el primer numero: '))        
+    fin= int(input('Ingrese el segundo numero: '))        
+    mmostarnum(incio,fin)
 
-print("La suma total es:", suma)
+main()
